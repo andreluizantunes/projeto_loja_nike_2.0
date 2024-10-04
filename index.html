@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    
+    <!-- Link para o ícone do site (logo da Nike) -->
+    <link rel="icon" href="./assets/images/logo_nike.png" type="image/png">
+
+        <!-- Normalize.css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Arquivos do CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!------------------- Inicio HEADER ------------------------->
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+
+            <div class="header-search">
+                <input type="search" name="search" placeholder="Pesquisar Produto..." class="input-field">
+                <button class="search-btn" aria-label="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo_nike.png" alt="Nike logo" width="60" height="31">
+            </a>
+
+            <div class="header-actions">
+                <div class="header-actions"></div>
+                <button class="header-action-btn">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Entrar</p>
+                </button>
+
+                <button class="header-action-btn">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Pesquisar</p>
+                </button>
+
+                <button class="header-action-btn">
+                    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Carrinho</p>
+                    <div class="btn-badge green" aria-hidden="true">3</div>
+                </button>
+
+                <button class="header-action-btn">
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Favoritos</p>
+                    <div class="btn-badge" aria-hidden="true">2</div>
+                </button>
+            </div>
+
+            <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo_nike.png" alt="Nike logo" width="130" height="31">
+                    </a>
+                    <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link">Home</a></li>
+                    <li><a href="#" class="navbar-link">Loja</a></li>
+                    <li><a href="#" class="navbar-link">Sobre</a></li>
+                    <li><a href="#blog" class="navbar-link">Blog</a></li>
+                    <li><a href="#" class="navbar-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-------------------- /Fim HEADER -------------------------->
+
+    <!------------------- Inicio HERO --------------------------->
+    <main>
+        <article>
+            <section class="hero" id="home" style="background-image: url('./assets/images/banner.jpg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">O mundo Nike, do seu jeito.</p>
+                        <h2 class="h1 hero-title">Just do it.</h2>
+                        <button class="btn btn-primary">Ver coleção</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-------------------- /Fim HERO ---------------------------->
+
+    <!------------------- Inicio SERVICE ------------------------>
+    <section class="service">
+        <div class="container">
+            <ul class="service-list">
+            
+                <li class="service-item">
+                    <div class="service-item-icon">
+                        <img src="./assets/images/icone_entrega_rapida.png" alt="Icone de entrega rápida." width="40px">
+                    </div>
+
+                    <div class="service-content">
+                        <p class="service-item-title">Frete grátis</p>
+                        <p class="service-item-text">Acima de R$ 599</p>
+                    </div>
+                </li>
+
+                <li class="service-item">
+                    <div class="service-item-icon">
+                        <img src="./assets/images/icone_caixa_de_devolucao.png" alt="Icone caixa de devolução." width="40px">
+                    </div>
+                
+                    <div class="service-content">
+                        <p class="service-item-title">Fácil devolução</p>
+                        <p class="service-item-text">Em até 30 dias</p>
+                    </div>
+                </li>
+            
+                <li class="service-item">
+                    <div class="service-item-icon">
+                        <img src="./assets/images/icone_pagamento_seguro.png" alt="Icone de pagamento seguro." width="40px">
+                    </div>
+                
+                    <div class="service-content">
+                        <p class="service-item-title">Pagamento Seguro</p>
+                        <p class="service-item-text">100% de Garantia</p>
+                    </div>
+                </li>
+            
+                <li class="service-item">
+                    <div class="service-item-icon">
+                        <img src="./assets/images/icone_apoio_suporte.png" alt="Icone de apoio e suporte" width="40px">
+                    </div>
+                
+                    <div class="service-content">
+                        <p class="service-item-title">Suporte Especial</p>
+                        <p class="service-item-text">Suporte 24 hrs</p>
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+    </section>
+    <!-------------------- /Fim SERVICE ------------------------->
+
+    <!------------------- Inicio CATEGORY ----------------------->
+    <section class="section category">
+        <div class="container">
+            <ul class="category-list">
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_dunk_ia.png" alt="Mulher usando um tênis Dunk da Nike" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">DUNK</a>
+                </li>
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_mercurial_cosmic_ia.png" alt="Jogador chutando bola com tênis chuteira Mercurial Cosmic" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">Mercurial Cosmic</a>
+                </li>
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_air_force_1_ia.png" alt="Imagem promocional do tênis Air Force 1" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">Air Force 1</a>
+                </li>
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_air_jordan_1.png" alt="Imagem promocional do tênis Air Jordan 1" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">Air Jordan 1</a>
+                </li>
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_pegasus_41.png" alt="Imagem promocional do tênis Pegasus 41" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">Pegasus 41</a>
+                </li>
+
+                <li class="category-item">
+                    <figure class="category-banner">
+                        <img src="./assets/images/category_nike_SB.png" alt="Imagem promocional do tênis Nike SB" loading="lazy" width="510" height="600" class="w-100">
+                    </figure>
+                    <a href="#" class="btn btn-secondary">Nike SB</a>
+                </li>
+            
+            </ul>
+        </div>
+    </section>
+    <!-------------------- /Fim CATEGORY ------------------------>
+
+    <!------------------- Inicio PRODUCT ------------------------>
+    <section class="section product">
+        <div class="container">  
+            <h2 class="h2 section-title">Produtos mais buscados</h2> 
+            <ul class="filter-list">   
+                <li>
+                    <button class="filter-btn  active">Best-seller</button>
+                </li>
+                <li>
+                    <button class="filter-btn">Coleção Hot</button>
+                </li>
+                <li>
+                    <button class="filter-btn">Tendências</button>
+                </li>
+                <li>
+                    <button class="filter-btn">Novidades</button>
+                </li>
+            </ul> 
+
+            <ul class="product-list">  
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-badge red"> -25%</div>
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Air</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="489.99">R$489.99</data>  
+                                <data value="699.99">R$699.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-badge green"> New</div>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Air Force 1</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="629.99">R$629.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy"
+                                width="800" height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#"> Air Max 97</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="329.99">R$329.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">WCourt Vision</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="849.99">R$849.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Blazer</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="459.99">R$459.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Waffle One</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="299.99">R$299.99</data>  
+                                <data value="399.99">R$399.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Air Max</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="259.99">R$259.99</data>  
+                                <data value="399.99">R$399.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Court Borough</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="859.99">R$859.99</data>  
+                                <data value="999.99">R$999.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Air Max SC</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="329.99">R$329.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="product-card"> 
+                        <figure class="card-banner"> 
+                            <a href="#">
+                                <img src="./assets/images/products.png" alt="Tênis Nike" loading="lazy" width="800"
+                                height="1034" class="w-100">
+                            </a>   
+                            <div class="card-badge green">New</div>
+                            <div class="card-actions"> 
+                                <button class="card-action-btn" aria-label="Quick view">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <button class="card-action-btn cart-btn">
+                                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon> 
+                                    <p>Adicionar</p>
+                                </button>
+                                <button class="card-action-btn" aria-label="Add to Whishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div> 
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">
+                                <a href="#">Court Legacy</a>
+                            </h3>  
+                            <div class="card-price">
+                                <data value="719.99">R$719.99</data>
+                            </div>
+                        </div>   
+                    </div>
+                </li>
+            </ul>  
+            <button class="btn btn-outline">Ver todos os produtos</button> 
+        </div>
+    </section>
+    <!-------------------- /Fim PRODUCT ------------------------->
+
+    <!------------------- Inicio BLOG --------------------------->
+    <section class="section blog">
+        <div class="container">
+            <h2 class="h2 section-title">Últimas notícias da Nike</h2>
+            <ul class="blog-list">
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog_1_event.png" alt="Imagem artistica pessoas praticando esportes com fundo colorido, promocional de um evento x da Nike" loading="lazy"
+                                width="1020" height="700" class="w-100">
+                            </a>
+                        </figure>
+                        <div class="card-content">
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="folder-open-outline"></ion-icon>
+                                    <a href="#" class="card-meta-link">NIKE</a>
+                                </li>
+                                <li class="card-meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <a href="#" class="card-meta-link">
+                                        <time datetime="2021-03-31">10 Set 2024</time>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="h3 card-title">
+                                <a href="#">Evento x acontecerá em 19/09</a>
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog_3_event.jpeg" alt="Prateleira de tenis da nova coleção Nike de primavera"
+                                loading="lazy" width="1020" height="700" class="w-100">
+                            </a>
+                        </figure>
+                        <div class="card-content">
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="folder-open-outline"></ion-icon>
+                                    <a href="#" class="card-meta-link">nike</a>
+                                </li>
+                                <li class="card-meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <a href="#" class="card-meta-link">
+                                        <time datetime="2021-03-31">31 Set 2024</time>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="h3 card-title">
+                                <a href="#">Nova coleção de Primavera</a>
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner">
+                            <a href="#">
+                                <img src="./assets/images/blog_2_event.png" alt="Imagem promocional de lançamento do tênis x-max 2097 da Nike"
+                                loading="lazy" width="1020" height="700" class="w-100">
+                            </a>
+                        </figure>
+                        <div class="card-content">
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="folder-open-outline"></ion-icon>
+                                <a href="#" class="card-meta-link">NIKE</a>
+                                </li>
+                                <li class="card-meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <a href="#" class="card-meta-link">
+                                        <time datetime="2021-03-31">20 SET 2024</time>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="h3 card-title">
+                                <a href="#">Novo lançamento tênis x-max 2097</a>
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-------------------- /Fim BLOG ---------------------------->
+
+    <!------------------- Inicio NEWSLETTER --------------------->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
+                <h2 class="card-title">Fique ligado</h2>
+                <p class="card-text">Digite seu e-mail abaixo para ser o primeiro a saber sobre novas coleções e lançamentos de produtos.</p>
+                <form action="" class="card-form">
+                    <div class="input-wrapper">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="emal" placeholder="Digite seu e-mail" required class="input-field">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <span>Inscrever-se</span>
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-------------------- /Fim NEWSLETTER ---------------------->
+
+    <!------------------- Inicio FOOTER ------------------------->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo_nike.png" alt="Casmart logo" width="50px">
+                    </a>
+                    <p class="footer-text">Nike apresenta uma coleção de tênis com modelos Étnicos, Casuais, de Corrida e Acessórios, todos inspirados nos estilos mais contemporâneos.</p>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Informações</p>
+                    </li>
+                    <li><a href="#" class="footer-link">Sobre a empresa</a></li>
+                    <li><a href="#" class="footer-link">Tipo de pagamento</a></li>
+                    <li><a href="#" class="footer-link">Prêmios vencedores</a></li>
+                    <li><a href="#" class="footer-link">Parceiros de Mídia</a></li>
+                    <li><a href="#" class="footer-link">Torne-se um parceiro</a></li>
+                    <li><a href="#" class="footer-link">Política de Reembolso</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Categorias</p>
+                    </li>
+                    <li><a href="#" class="footer-link">Tênis de Corrida</a></li>
+                    <li><a href="#" class="footer-link">Tênis Casuais</a></li>
+                    <li><a href="#" class="footer-link">Tênis de Caminhada</a></li>
+                    <li><a href="#" class="footer-link">Tênis de Basquete</a></li>
+                    <li><a href="#" class="footer-link">Tênis de Skate</a></li>
+                    <li><a href="#" class="footer-link">Tênis Ecológicos</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Ajuda e suporte</p>
+                    </li>
+                    <li><a href="#" class="footer-link">Revendedores e Agentes</a></li>
+                    <li><a href="#" class="footer-link">Dúvidas frequentes</a></li>
+                    <li><a href="#" class="footer-link">Política de devolução</a></li>
+                    <li><a href="#" class="footer-link">Envio e entrega</a></li>
+                    <li><a href="#" class="footer-link">Acompanhar pedidos</a></li>
+                    <li><a href="#" class="footer-link">Lista de Lojas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2024 <a href="#">André Luiz</a>. Todos os direitos reservados.
+                </p>
+
+                <ul class="footer-bottom-list">
+                    <li><a href="#" class="footer-bottom-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-bottom-link">Termos e Condições</a></li>
+                    <li><a href="#" class="footer-bottom-link">Mapa do site</a></li>
+                </ul>
+
+                <div class="payment">
+                    <p class="payment-title">Nós aceitamos</p>
+                    <img src="./assets/images/bancos_logos.png" walt="Online payment logos" class="payment-img" width="100px" >
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------- /Fim FOOTER -------------------------->
+
+    <!--ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
